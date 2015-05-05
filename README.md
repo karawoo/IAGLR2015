@@ -1,4 +1,6 @@
-Slides for [my talk](http://iaglr.org/conference/abstracts/pub_sesspres_view.php?session_id=4) at IAGLR 2015. [View slide deck.](http://karawoo.com/IAGLR2015/27_Chittenden_10:20_Woo.html)
+Slides for [my talk](http://iaglr.org/conference/abstracts/pub_sesspres_view.php?session_id=4) at IAGLR 2015. [View slide deck.](http://karawoo.com/IAGLR2015/woo_underice_iaglr_2015.html)
+
+## Abstract
 
 ### Data Management and Building Community in a Global Synthesis of Under-Ice Productivity
 
@@ -22,3 +24,22 @@ Additionally we developed an R software package to automate data quality
 assurance. Project files and analyses are hosted on a website to which
 collaborators have access, with clear expectations for access and use, and the
 data will ultimately be published in an open access data repository.
+
+## Building these files
+
+I am using [Slidify](https://github.com/ramnathv/slidify) to write this
+presentation. `slidify("woo_underice_iaglr_2015.Rmd")` will create HTML
+slides. There's a makefile to create HTML and PDF slides simultaneously (`make
+all`). PhantomJS and CasperJS are required to build the PDF. I followed
+[these instructions](https://gist.github.com/julionc/7476620) to install
+PhantomJS. To install CasperJS on Ubuntu 14.04:
+
+```
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+sudo npm install -g casperjs
+```
+
+The makefile also copies the PDF to a new file with the name format required by
+IAGLR (dayofmonth_room_time_surname).
