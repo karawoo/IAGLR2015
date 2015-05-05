@@ -1,4 +1,4 @@
-Slides for my talk at IAGLR 2015.
+Slides for [my talk](http://iaglr.org/conference/abstracts/pub_sesspres_view.php?session_id=4) at IAGLR 2015. [View slide deck.](http://karawoo.com/IAGLR2015/27_Chittenden_10:20_Woo.html)
 
 ### Data Management and Building Community in a Global Synthesis of Under-Ice Productivity
 
