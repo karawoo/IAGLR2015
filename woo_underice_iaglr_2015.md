@@ -12,14 +12,35 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 license     : by
 knit        : slidify::knit2slides
----
+--- #custbg
 
-## 
+## What goes on under ice in lakes?
 
---- .class #id 
+<a class="my-caption">Photo: Ted Ozersky</a>
 
-## 
+<style>
+#custbg {
+  background-image:url(assets/img/ozersky_baikal_2013_small.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+</style>
 
 
+--- #custbg
 
+## Challenges for synthesis
 
+1. Managing communications
+2. Integrating heterogeneous data
+3. Building a sense of community
+
+<style>
+#custbg {
+  background-image:url(assets/img/ozersky_baikal_2013_small.jpg); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+</style>
