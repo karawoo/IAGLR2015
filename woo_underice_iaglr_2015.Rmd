@@ -1,6 +1,7 @@
 ---
-title       : "Data Management and Building Community in a Global Synthesis of Under-Ice
-Productivity"
+title       : "Data Management and Building Community in a Global Synthesis of Under-Ice Productivity"
+titlep1     : "Data Management and Building Community in a Global Synthesis of"
+titlep2     : "Under-Ice Productivity"
 subtitle    : 
 author      : Kara H. Woo, Stephanie E. Hampton, Aaron W. E. Galloway
 job         : Washington State University
