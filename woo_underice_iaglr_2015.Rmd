@@ -36,6 +36,8 @@ knit        : slidify::knit2slides
 2. Integrating heterogeneous data
 3. Building a sense of community
 
+<a class="my-caption">Photo: Ted Ozersky</a>
+
 <style>
 #custbg {
   background-image:url(assets/img/ozersky_baikal_2013_small.jpg); 
@@ -44,3 +46,129 @@ knit        : slidify::knit2slides
   background-size: cover;
 }
 </style>
+
+--- .segue .dark
+
+## Step 1: Gauging interest
+
+--- #custbgcloud
+
+\>100 survey responses
+
+```{r datacloud, fig.path='assets/img/', fig.show='hide', fig.align='center', fig.height=12, fig.width=12, echo=FALSE, message=FALSE, warning=FALSE}
+library("dplyr")
+library("wordcloud")
+# load the data
+resp <- read.delim("assets/data/ice_workshop_responses_20140801.tsv",
+                   sep = "\t", header = TRUE, na.strings = "",
+                   stringsAsFactors = FALSE)
+
+# remove first four lines -- these are junk (from testing the google form)
+resp <- resp[5:nrow(resp), ]
+
+# create id column
+resp$id <- paste(resp$First.Name, resp$Last.Name, sep = "_")
+
+# rename columns
+names(resp) <- c("timestamp", "first", "last", "mi", "email", "phone", "skype",
+                 "google", "dept", "institution", "country", "insitu_lakename",
+                 "insitu_lakecountry", "insitu_season", "insitu_type",
+                 "remote_lakename", "remote_lakecountry", "remote_season",
+                 "remote_parameters", "experimental_type", "experimental_desc",
+                 "interests", "archived_plankton", "winter_sampling_plans",
+                 "other", "position", "id")
+
+source("assets/code/reshape_responses.R")
+
+# all possible data types (not including write-ins)
+mc_answers <- c("Phytoplankton",
+                "Zooplankton",
+                "Fish",
+                "Benthic invertebrates",
+                "Macrophytes",
+                "Benthic algae",
+                "Chlorophyll",
+                "Secchi",
+                "Temperature",
+                "Nitrogen",
+                "Phosphorus",
+                "Stable isotopes",
+                "Fatty acids",
+                "Primary production estimates",
+                "Trophic interactions")
+
+df <- reshape_responses(resp, datacol = "insitu_type",
+                        choices = mc_answers, mc = TRUE) %>%
+  group_by(data) %>%
+  tally()
+
+pal2 <- brewer.pal(8,"Dark2")
+set.seed(3000)
+wordcloud(words = df$data, freq = df$n, min.freq = 2, colors = pal2)
+
+```
+<style>
+#custbgcloud {
+  background-image:url(assets/img/datacloud-1.png); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+</style>
+
+--- .segue .dark
+
+## Step 2: Data Template
+
+---
+
+## Goals
+
+1. Integrate data as seamlessly as possible
+2. Encourage sharing
+
+---
+
+* 135 fields
+* metadata + aggregated data (under-ice vs stratified)
+
+<img src="assets/img/underice_aggregation_cartoon.png" width="900">
+
+--- .segue .dark
+
+## Step 3: Validate Data
+
+---
+
+## R package `icetest`
+
+https://github.com/karawoo/icetest
+
+![](assets/img/icetest.png)
+
+--- .segue .dark
+
+## Step 4: Lots of Email
+
+--- .segue .dark
+
+## Step 5: The Fun Part
+
+--- &twocol
+
+## Workshop at NCEAS
+
+*** =left
+
+<img src="assets/img/hampton_underice_meeting.jpg" width="450">
+
+<a class="my-caption">Photos: Stephanie Hampton (left), NCEAS (right)</a>
+
+13 in-person participants  
+19 remote participants
+
+
+*** =right
+
+<img src="assets/img/nceas_underice_meeting.jpg" width="450">
+

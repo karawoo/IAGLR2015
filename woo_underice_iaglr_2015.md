@@ -36,6 +36,8 @@ knit        : slidify::knit2slides
 2. Integrating heterogeneous data
 3. Building a sense of community
 
+<a class="my-caption">Photo: Ted Ozersky</a>
+
 <style>
 #custbg {
   background-image:url(assets/img/ozersky_baikal_2013_small.jpg); 
@@ -44,3 +46,78 @@ knit        : slidify::knit2slides
   background-size: cover;
 }
 </style>
+
+--- .segue .dark
+
+## Step 1: Gauging interest
+
+--- #custbgcloud
+
+\>100 survey responses
+
+
+<style>
+#custbgcloud {
+  background-image:url(assets/img/datacloud-1.png); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+</style>
+
+--- .segue .dark
+
+## Step 2: Data Template
+
+---
+
+## Goals
+
+1. Integrate data as seamlessly as possible
+2. Encourage sharing
+
+---
+
+* 135 fields
+* metadata + aggregated data (under-ice vs stratified)
+
+<img src="assets/img/underice_aggregation_cartoon.png" width="900">
+
+--- .segue .dark
+
+## Step 3: Validate Data
+
+---
+
+## R package `icetest`
+
+https://github.com/karawoo/icetest
+
+![](assets/img/icetest.png)
+
+--- .segue .dark
+
+## Step 4: Lots of Email
+
+--- .segue .dark
+
+## Step 5: The Fun Part
+
+--- &twocol
+
+## Workshop at NCEAS
+
+*** =left
+
+<img src="assets/img/hampton_underice_meeting.jpg" width="450">
+
+<a class="my-caption">Photos: Stephanie Hampton (left), NCEAS (right)</a>
+
+13 in-person participants  
+19 remote participants
+
+
+*** =right
+
+<img src="assets/img/nceas_underice_meeting.jpg" width="450">
+
