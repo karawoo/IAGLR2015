@@ -55,7 +55,7 @@ knit        : slidify::knit2slides
 
 \>100 survey responses
 
-```{r datacloud, fig.path='assets/img/', fig.show='hide', fig.align='center', fig.height=12, fig.width=12, echo=FALSE, message=FALSE, warning=FALSE}
+```{r datacloud, fig.path='assets/img/', fig.show='hide', fig.align='center', fig.height=12, fig.width=12, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
 library("dplyr")
 library("wordcloud")
 # load the data
@@ -129,10 +129,14 @@ wordcloud(words = df$data, freq = df$n, min.freq = 2, colors = pal2)
 
 ---
 
-* 135 fields
-* metadata + aggregated data (under-ice vs stratified)
+<img src="assets/img/underice_aggregation_cartoon.png" width="950">
 
-<img src="assets/img/underice_aggregation_cartoon.png" width="900">
+---
+
+## Policies
+
+* Document describing how data would be used and shared
+* Internally to project collaborators first, then eventually public
 
 --- .segue .dark
 
@@ -144,7 +148,7 @@ wordcloud(words = df$data, freq = df$n, min.freq = 2, colors = pal2)
 
 https://github.com/karawoo/icetest
 
-![](assets/img/icetest.png)
+<img src="assets/img/icetest.png" width="850">
 
 --- .segue .dark
 
@@ -164,11 +168,52 @@ https://github.com/karawoo/icetest
 
 <a class="my-caption">Photos: Stephanie Hampton (left), NCEAS (right)</a>
 
-13 in-person participants  
-19 remote participants
-
-
 *** =right
 
 <img src="assets/img/nceas_underice_meeting.jpg" width="450">
+
+---
+
+## Collaborative website
+
+<img src="assets/img/redmine.png" width="900">
+
+--- #custbgmap
+
+## Lakes represented (so far)
+
+```{r lake_map, echo=FALSE, message=FALSE, warning=FALSE, fig.path='assets/img/', fig.show='hide', fig.width=13, fig.height=10}
+df <- read.csv("assets/data/full_under_ice_data_20150510.csv", stringsAsFactors = FALSE)
+library("dplyr")
+library("ggplot2")
+library("maps")
+
+df %>%
+  group_by(stationlat, stationlong) %>%
+  tally() %>%
+  ggplot() +
+  borders("world") +
+  geom_point(aes(x = stationlong, y = stationlat, color = n), size = 5) +
+  labs(x ="Station Longitude", y = "Station Latitude", color = "Seasons of Data") +
+  coord_fixed()
+```
+
+<style>
+#custbgmap {
+  background-image:url(assets/img/lake_map-1.png); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+</style>
+
+---
+
+
+## Conclusions
+
+* Plan ahead
+* Centralize communication
+  * Email lists
+  * Project website (Redmine, Open Science Framework, etc.)
 

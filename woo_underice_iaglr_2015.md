@@ -78,10 +78,14 @@ knit        : slidify::knit2slides
 
 ---
 
-* 135 fields
-* metadata + aggregated data (under-ice vs stratified)
+<img src="assets/img/underice_aggregation_cartoon.png" width="950">
 
-<img src="assets/img/underice_aggregation_cartoon.png" width="900">
+---
+
+## Policies
+
+* Document describing how data would be used and shared
+* Internally to project collaborators first, then eventually public
 
 --- .segue .dark
 
@@ -93,7 +97,7 @@ knit        : slidify::knit2slides
 
 https://github.com/karawoo/icetest
 
-![](assets/img/icetest.png)
+<img src="assets/img/icetest.png" width="850">
 
 --- .segue .dark
 
@@ -113,11 +117,38 @@ https://github.com/karawoo/icetest
 
 <a class="my-caption">Photos: Stephanie Hampton (left), NCEAS (right)</a>
 
-13 in-person participants  
-19 remote participants
-
-
 *** =right
 
 <img src="assets/img/nceas_underice_meeting.jpg" width="450">
+
+---
+
+## Collaborative website
+
+<img src="assets/img/redmine.png" width="900">
+
+--- #custbgmap
+
+## Lakes represented (so far)
+
+
+
+<style>
+#custbgmap {
+  background-image:url(assets/img/lake_map-1.png); 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+</style>
+
+---
+
+
+## Conclusions
+
+* Plan ahead
+* Centralize communication
+  * Email lists
+  * Project website (Redmine, Open Science Framework, etc.)
 
