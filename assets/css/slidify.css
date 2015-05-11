@@ -48,6 +48,7 @@ article p, article li, article li.build, section p, section li{
   font-size:36px;
   line-height: 1.5em;
   color: #444;
+  text-align: left;
 }
 
 slide:not(.segue) h2{
