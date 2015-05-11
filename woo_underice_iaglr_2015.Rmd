@@ -232,7 +232,7 @@ df %>%
 df %>%
   ggplot(aes(x = season, y = log10(avechla))) +
   geom_boxplot() +
-  labs(x = "Season", y = "Log 10 average chlorophyll-a (µg L^-1)") +
+  labs(x = "Season", y = "Log 10 avg. chlorophyll-a (µg L^-1)") +
   theme_bw() +
   theme(axis.text = element_text(size = 22),
         axis.title.x = element_text(size = 30, vjust = 0.3),
