@@ -1,4 +1,4 @@
-var casper = require('casper').create({viewportSize:{width:1600,height:900}});
+var casper = require('casper').create({viewportSize:{width:1600,height:1200}});
 var args = casper.cli.args;
 var imgfile = (args[1] || Math.random().toString(36).slice(2))
 casper.start(args[0], function() {
