@@ -49,7 +49,7 @@ knit        : slidify::knit2slides
 
 --- .segue .dark
 
-## Step 1: Gauging interest
+## Step 1: Gauging Interest
 
 --- #custbgcloud
 
@@ -135,7 +135,7 @@ wordcloud(words = df$data, freq = df$n, min.freq = 2, colors = pal2)
 
 ## Policies
 
-* Document describing how data would be used and shared
+* Document describing how data will be used and shared
 * Internally to project collaborators first, then eventually public
 
 --- .segue .dark
@@ -180,9 +180,7 @@ https://github.com/karawoo/icetest
 
 --- #custbgmap
 
-## Lakes represented (so far)
-
-```{r lake_map, echo=FALSE, message=FALSE, warning=FALSE, fig.path='assets/img/', fig.show='hide', fig.width=13, fig.height=10}
+```{r lake_map, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, fig.path='assets/img/', fig.show='hide', fig.width=13, fig.height=10}
 df <- read.csv("assets/data/full_under_ice_data_20150510.csv", stringsAsFactors = FALSE)
 library("dplyr")
 library("ggplot2")
@@ -194,9 +192,13 @@ df %>%
   ggplot() +
   borders("world") +
   geom_point(aes(x = stationlong, y = stationlat, color = n), size = 5) +
-  labs(x ="Station Longitude", y = "Station Latitude", color = "Seasons of Data") +
+  labs(color = "Seasons of Data") +
+  theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank()) +
   coord_fixed()
 ```
+
+## `r length(unique(df$lakename))` lakes represented (so far)
 
 <style>
 #custbgmap {
@@ -207,13 +209,64 @@ df %>%
 }
 </style>
 
----
+--- &twocol
 
+## Ice-off vs. ice-on chlorophyll-a
+
+*** =left
+
+```{r chla_iceon_iceoff_jitter, fig.path='assets/img/', echo=FALSE, message=FALSE, warning=FALSE}
+df %>%
+  ggplot(aes(x = season, y = avechla)) +
+  geom_jitter(alpha = 0.5, size = 4, color = 'darkblue') +
+  labs(x = "Season", y = "Average chlorophyll-a (µg L^-1)") +
+  theme_bw() +
+  theme(axis.text = element_text(size = 22),
+        axis.title.x = element_text(size = 30, vjust = 0.3),
+        axis.title.y = element_text(size = 30, vjust = 1.8))
+```
+
+*** =right
+
+```{r chla_iceon_iceoff_box, fig.path='assets/img/', echo=FALSE, message=FALSE, warning=FALSE}
+df %>%
+  ggplot(aes(x = season, y = log10(avechla))) +
+  geom_boxplot() +
+  labs(x = "Season", y = "Log 10 average chlorophyll-a (µg L^-1)") +
+  theme_bw() +
+  theme(axis.text = element_text(size = 22),
+        axis.title.x = element_text(size = 30, vjust = 0.3),
+        axis.title.y = element_text(size = 30, vjust = 1.8))
+```
+
+--- .segue .dark
 
 ## Conclusions
 
+---
+
+## Managing communications
+
+* Centralize communication (email lists, project website)
+
+## Integrating heterogeneous data
+
 * Plan ahead
-* Centralize communication
-  * Email lists
-  * Project website (Redmine, Open Science Framework, etc.)
+* Validate the data
+
+## Building community
+
+* Be inclusive
+* Communicate expectations early
+
+
+---
+
+## Acknowledgements
+
+NSF: ??????
+
+Ice workshop steering committee: Emily Stanley, Ted Ozersky, Chris Polashenski
+
+National Center for Ecological Analysis and Synthesis
 

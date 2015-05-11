@@ -49,7 +49,7 @@ knit        : slidify::knit2slides
 
 --- .segue .dark
 
-## Step 1: Gauging interest
+## Step 1: Gauging Interest
 
 --- #custbgcloud
 
@@ -84,7 +84,7 @@ knit        : slidify::knit2slides
 
 ## Policies
 
-* Document describing how data would be used and shared
+* Document describing how data will be used and shared
 * Internally to project collaborators first, then eventually public
 
 --- .segue .dark
@@ -129,9 +129,9 @@ https://github.com/karawoo/icetest
 
 --- #custbgmap
 
-## Lakes represented (so far)
 
 
+## 86 lakes represented (so far)
 
 <style>
 #custbgmap {
@@ -142,13 +142,46 @@ https://github.com/karawoo/icetest
 }
 </style>
 
----
+--- &twocol
 
+## Ice-off vs. ice-on chlorophyll-a
+
+*** =left
+
+![plot of chunk chla_iceon_iceoff_jitter](assets/img/chla_iceon_iceoff_jitter-1.png) 
+
+*** =right
+
+![plot of chunk chla_iceon_iceoff_box](assets/img/chla_iceon_iceoff_box-1.png) 
+
+--- .segue .dark
 
 ## Conclusions
 
+---
+
+## Managing communications
+
+* Centralize communication (email lists, project website)
+
+## Integrating heterogeneous data
+
 * Plan ahead
-* Centralize communication
-  * Email lists
-  * Project website (Redmine, Open Science Framework, etc.)
+* Validate the data
+
+## Building community
+
+* Be inclusive
+* Communicate expectations early
+
+
+---
+
+## Acknowledgements
+
+NSF: ??????
+
+Ice workshop steering committee: Emily Stanley, Ted Ozersky, Chris Polashenski
+
+National Center for Ecological Analysis and Synthesis
 
