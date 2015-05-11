@@ -179,7 +179,7 @@ https://github.com/karawoo/icetest
 
 ## Acknowledgements
 
-NSF: ??????
+NSF DEB #1431428
 
 Ice workshop steering committee: Emily Stanley, Ted Ozersky, Chris Polashenski
 
