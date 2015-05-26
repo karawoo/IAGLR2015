@@ -4,7 +4,7 @@ titlep1     : "Data Management and Building Community in a Global Synthesis of"
 titlep2     : "Under-Ice Productivity"
 subtitle    : 
 author      : Kara H. Woo, Stephanie E. Hampton, Aaron W. E. Galloway
-job         : Washington State University
+job         : Washington State University | @kara_woo
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -53,7 +53,7 @@ knit        : slidify::knit2slides
 
 --- #custbgcloud
 
-\>100 survey responses
+\>100 survey responses, \>80 with data on:
 
 
 <style>
@@ -75,6 +75,7 @@ knit        : slidify::knit2slides
 
 1. Integrate data as seamlessly as possible
 2. Encourage sharing
+3. Use researchers' system-specific knowledge
 
 ---
 
@@ -84,8 +85,9 @@ knit        : slidify::knit2slides
 
 ## Policies
 
-* Document describing how data will be used and shared
-* Internally to project collaborators first, then eventually public
+Document describing how data will be used and shared
+
+Internally to collaborators first, then eventually public
 
 --- .segue .dark
 
@@ -162,7 +164,8 @@ https://github.com/karawoo/icetest
 
 ## Managing communications
 
-* Centralize communication (email lists, project website)
+* Be responsive
+* Centralize communication
 
 ## Integrating heterogeneous data
 
@@ -172,7 +175,7 @@ https://github.com/karawoo/icetest
 ## Building community
 
 * Be inclusive
-* Communicate expectations early
+* Communicate expectations early and often
 
 
 ---
@@ -182,6 +185,8 @@ https://github.com/karawoo/icetest
 NSF DEB #1431428
 
 Ice workshop steering committee: Emily Stanley, Ted Ozersky, Chris Polashenski
+
+Matthew Pruett
 
 National Center for Ecological Analysis and Synthesis
 
