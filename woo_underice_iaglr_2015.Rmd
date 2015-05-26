@@ -4,7 +4,7 @@ titlep1     : "Data Management and Building Community in a Global Synthesis of"
 titlep2     : "Under-Ice Productivity"
 subtitle    : 
 author      : Kara H. Woo, Stephanie E. Hampton, Aaron W. E. Galloway
-job         : Washington State University
+job         : Washington State University | @kara_woo
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -53,7 +53,7 @@ knit        : slidify::knit2slides
 
 --- #custbgcloud
 
-\>100 survey responses
+\>100 survey responses, \>80 with data on:
 
 ```{r datacloud, fig.path='assets/img/', fig.show='hide', fig.align='center', fig.height=12, fig.width=12, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE}
 library("dplyr")
@@ -136,8 +136,9 @@ wordcloud(words = df$data, freq = df$n, min.freq = 2, colors = pal2)
 
 ## Policies
 
-* Document describing how data will be used and shared
-* Internally to project collaborators first, then eventually public
+Document describing how data will be used and shared
+
+Internally to collaborators first, then eventually public
 
 --- .segue .dark
 
@@ -182,7 +183,7 @@ https://github.com/karawoo/icetest
 --- #custbgmap
 
 ```{r lake_map, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, fig.path='assets/img/', fig.show='hide', fig.width=13, fig.height=10}
-df <- read.csv("assets/data/full_under_ice_data_20150510.csv", stringsAsFactors = FALSE)
+df <- read.csv("assets/data/full_under_ice_data_20150513.csv", stringsAsFactors = FALSE)
 library("dplyr")
 library("ggplot2")
 library("maps")
