@@ -25,7 +25,7 @@ all: html pdf
 
 %.pdf: %.html
 	casperjs makepdf.js $< $@ $(DELAY)
-	cp $@ 27_Chittenden_10\:20_Woo.pdf
+	cp $@ 27_Chittenden_1020_Woo.pdf
 
 %.html: %.Rmd
 	R -e "slidify::slidify('$<')"
