@@ -43,3 +43,8 @@ sudo npm install -g casperjs
 
 The makefile also copies the PDF to a new file with the name format required by
 IAGLR (dayofmonth_room_time_surname).
+
+### Note:
+
+I have downgraded the `stringr` package to v. 0.6.2 for building these slides.
+See [this thread](https://github.com/ramnathv/slidify/issues/407).
