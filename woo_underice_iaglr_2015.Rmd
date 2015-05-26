@@ -127,6 +127,7 @@ wordcloud(words = df$data, freq = df$n, min.freq = 2, colors = pal2)
 
 1. Integrate data as seamlessly as possible
 2. Encourage sharing
+3. Use researchers' system-specific knowledge
 
 ---
 
@@ -249,7 +250,8 @@ df %>%
 
 ## Managing communications
 
-* Centralize communication (email lists, project website)
+* Be responsive
+* Centralize communication
 
 ## Integrating heterogeneous data
 
@@ -259,7 +261,7 @@ df %>%
 ## Building community
 
 * Be inclusive
-* Communicate expectations early
+* Communicate expectations early and often
 
 
 ---
@@ -269,6 +271,8 @@ df %>%
 NSF DEB #1431428
 
 Ice workshop steering committee: Emily Stanley, Ted Ozersky, Chris Polashenski
+
+Matthew Pruett
 
 National Center for Ecological Analysis and Synthesis
 
