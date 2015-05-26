@@ -28,29 +28,9 @@ knit        : slidify::knit2slides
 }
 </style>
 
-
---- #custbg
-
-## Challenges for synthesis
-
-1. Managing communications
-2. Integrating heterogeneous data
-3. Building a sense of community
-
-<a class="my-caption">Photo: Ted Ozersky</a>
-
-<style>
-#custbg {
-  background-image:url(assets/img/ozersky_baikal_2013_small.jpg); 
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-</style>
-
 --- .segue .dark
 
-## Step 1: Gauging Interest
+## Just how broad is interest in under ice ecology?
 
 --- #custbgcloud
 
@@ -66,9 +46,20 @@ knit        : slidify::knit2slides
 }
 </style>
 
+
+--- 
+
+## Challenges for synthesis
+
+1. Managing communications
+2. Integrating heterogeneous data
+3. Building a sense of community
+4. Incentives
+
+
 --- .segue .dark
 
-## Step 2: Data Template
+## Data Template
 
 ---
 
@@ -90,9 +81,11 @@ Document describing how data will be used and shared
 
 Internally to collaborators first, then eventually public
 
+Policies shared early and often
+
 --- .segue .dark
 
-## Step 3: Validate Data
+## Validate Data
 
 ---
 
@@ -104,11 +97,11 @@ https://github.com/karawoo/icetest
 
 --- .segue .dark
 
-## Step 4: Lots of Email
+## Lots of Email
 
 --- .segue .dark
 
-## Step 5: The Fun Part
+## The Fun Part
 
 --- &twocol
 
@@ -161,20 +154,30 @@ https://github.com/karawoo/icetest
 
 ## Conclusions
 
----
+--- &twocol
+
+*** =left
 
 ## Managing communications
 
-* Be responsive
-* Centralize communication
+<br/>
 
 ## Integrating heterogeneous data
 
-* Plan ahead
-* Validate the data
+<br/>
 
 ## Building community
 
+<br/>
+
+## Incentives
+
+*** =right
+
+* Be responsive
+* Centralize communication
+* Plan ahead
+* Validate the data
 * Be inclusive
 * Communicate expectations early and often
 
@@ -187,7 +190,7 @@ NSF DEB #1431428
 
 Ice workshop steering committee: Emily Stanley, Ted Ozersky, Chris Polashenski
 
-Matthew Pruett
+Undergraduate researcher: Matthew Pruett
 
 National Center for Ecological Analysis and Synthesis
 
