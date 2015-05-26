@@ -100,10 +100,11 @@ mc_answers <- c("Phytoplankton",
 df <- reshape_responses(resp, datacol = "insitu_type",
                         choices = mc_answers, mc = TRUE) %>%
   group_by(data) %>%
-  tally()
+  tally() %>%
+  filter(data != "NA")
 
 pal2 <- brewer.pal(8,"Dark2")
-set.seed(3000)
+set.seed(329)
 wordcloud(words = df$data, freq = df$n, min.freq = 2, colors = pal2)
 
 ```
