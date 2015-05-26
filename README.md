@@ -28,9 +28,11 @@ data will ultimately be published in an open access data repository.
 ## Building these files
 
 I am using [Slidify](https://github.com/ramnathv/slidify) to write this
-presentation. `slidify("woo_underice_iaglr_2015.Rmd")` will create HTML
-slides. There's a makefile to create HTML and PDF slides simultaneously (`make
-all`). PhantomJS and CasperJS are required to build the PDF. I followed
+presentation. `slidify("woo_underice_iaglr_2015.Rmd")` will create HTML slides.
+There's a makefile to create HTML and PDF slides simultaneously (`make all`);
+the PDF generation was adapted from
+[this gist](https://gist.github.com/ramnathv/8700285) with some tweaks to the
+slide size. PhantomJS and CasperJS are required to build the PDF. I followed
 [these instructions](https://gist.github.com/julionc/7476620) to install
 PhantomJS. To install CasperJS on Ubuntu 14.04:
 
@@ -42,7 +44,7 @@ sudo npm install -g casperjs
 ```
 
 The makefile also copies the PDF to a new file with the name format required by
-IAGLR (dayofmonth_room_time_surname).
+IAGLR (dayofmonth_room_time_surname); this is `.gitignore`ed.
 
 ### Note:
 
