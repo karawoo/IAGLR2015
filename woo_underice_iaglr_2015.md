@@ -5,6 +5,7 @@ titlep2     : "Under-Ice Productivity"
 subtitle    : 
 author      : Kara H. Woo, Stephanie E. Hampton, Aaron W. E. Galloway
 job         : Washington State University | @kara_woo
+conf        : IAGLR 2015, Burlington, VT
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
