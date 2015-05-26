@@ -3,8 +3,3 @@ slide:not(.segue) h2{
   line-height: 60px;
   letter-spacing: -2px;
 }
-
-ul li
-{
-    line-height:1em;
-}
