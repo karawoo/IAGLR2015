@@ -176,7 +176,7 @@ https://github.com/karawoo/icetest
 
 * Be responsive
 * Centralize communication
-* Plan ahead
+* Plan ahead for data integration
 * Validate the data
 * Be inclusive
 * Communicate expectations early and often
